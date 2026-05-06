@@ -1,0 +1,59 @@
+Title: Login link redirects repeatedly to the same page instead of opening authentication screen
+
+## Preconditions
+
+- User is not logged in
+
+- Website is accessed via desktop browser
+
+- Login option is visible on the homepage
+
+## Environment
+
+- Browser: Firefox
+
+- OS: Ubuntu
+
+## Steps to Reproduce
+
+1. Access the website homepage
+
+2. Click on "Fazer Login"
+
+3. After redirection, click on "Fazer Login" again
+
+## Expected Result
+
+User should be redirected to a login page with authentication fields
+
+## Actual Result
+
+User is redirected to a page with URL containing "?page_id=6"
+
+Clicking "Fazer Login" again repeats the same behavior, preventing access to a login screen
+
+## Severity
+
+High
+
+## Severity Justification: Core authentication flow is broken, preventing user from acessing the system entirely
+
+## Priority
+
+High
+
+## Type
+
+Bug
+
+## ISO 25010 Category
+
+Functional Suitability
+
+## ISO 25010 Subcategory
+
+Functional Correctness
+
+## Secondary Impact
+
+Usability – Operability
